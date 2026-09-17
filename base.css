@@ -1,1 +1,35 @@
-/* Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+ul li{
+    list-style: none;
+}
+
+header{
+    background-color: grey;
+    padding: 20px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+display: flex;
+background-color: grey;
+}
+
+h1 {
+    font-family: "Big Shoulders", sans-serif;
+    text-transform: uppercase;
+}
