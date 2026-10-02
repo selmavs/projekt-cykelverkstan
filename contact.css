@@ -1,1 +1,280 @@
-/* hej */
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a:focus-visible, input:focus-visible, button:focus-visible, textarea:focus-visible {
+  outline: 2px solid #2c6e9b;
+}
+
+body {
+  background-color: #161B18;
+  color: #a3b8ad;
+  font-family: "Karla", sans-serif;
+}
+
+header {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #161B18;
+  border-bottom: 0.2px solid grey;
+}
+
+input {
+  background-color: #161B18;
+  border-style: solid;
+  border-radius: 5px;
+  width: 430px;
+  height: 30px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo p {
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+.logo p:first-child {
+  font-weight: 1000;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: white;
+}
+.logo p:last-child {
+  font-size: 10px;
+}
+
+.contact-info p {
+  margin-bottom: 5px;
+}
+.contact-info p li {
+  margin-top: 20px;
+}
+
+.time {
+  color: #a3b8ad;
+}
+
+.opening-hours {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+  row-gap: 6px;
+}
+
+svg {
+  margin: 10px;
+}
+
+.icon-icon {
+  margin-right: 15px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+nav a {
+  text-decoration: none;
+  color: #a3b8ad;
+}
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.map {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 250px;
+  margin-top: 20px;
+  background-color: #161B18;
+  grid-column: 1;
+  border-radius: 8px;
+  border-color: #2d3b36;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.container {
+  width: 900px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  border-style: solid;
+  border-bottom: #a3b8ad;
+  border-right: #a3b8ad;
+  border-left: #8a8d8b;
+  border-color: grey;
+  border-width: 1px;
+}
+
+h1, h2 {
+  grid-column: span 2;
+  color: white;
+}
+
+p {
+  color: #a3b8ad;
+}
+
+span {
+  color: white;
+}
+
+.contact-grid {
+  grid-column: 1;
+}
+
+.contact-info {
+  list-style: none;
+}
+.contact-info li {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.contact-form {
+  width: 100%;
+  background-color: #161B18;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 6px;
+  margin: 6px;
+  grid-column: 2;
+  grid-row: 2;
+}
+.contact-form textarea {
+  width: 100%;
+  height: 100px;
+  background-color: #161B18;
+  color: #ffffff;
+  border-radius: 10px;
+}
+.contact-form button {
+  background-color: #ff9559;
+  padding: 6px;
+  border-radius: 7px;
+  padding-left: 23px;
+  padding-right: 23px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  font-size: 15px;
+}
+.contact-form firstname, .contact-form e-post {
+  border-color: grey;
+}
+.contact-form .form-group {
+  margin-bottom: 15px;
+}
+
+.Hitta-oss {
+  grid-column: span 2;
+  margin-top: 30px;
+}
+.Hitta-oss h2 {
+  margin-bottom: 10px;
+}
+
+.transportmedel {
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.transportmedel h4 {
+  margin-bottom: 10px;
+  color: white;
+}
+
+.tmedel {
+  min-height: 120px;
+  background-color: #1A231F;
+  padding: 30px;
+  border-radius: 8px;
+  border-color: #2d3b36;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.ValingaFrågor {
+  grid-column: span 2;
+  margin: 30px;
+}
+.ValingaFrågor h2 {
+  margin-bottom: 30px;
+}
+
+.QandA {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5px;
+  color: #a3b8ad;
+  border-top: 1px solid #a3b8ad;
+  border-bottom: 1px solid #a3b8ad;
+}
+.QandA span {
+  font-weight: 950;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #1A231F;
+}
+
+.contact-info {
+  color: #a3b8ad;
+}
+
+.ben {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    display: block;
+    padding: 20px;
+  }
+  nav {
+    display: flex;
+  }
+  p {
+    margin: 5px;
+  }
+  .contact-form {
+    margin-top: 30px;
+  }
+  input {
+    width: 100%;
+  }
+  .transportmedel {
+    display: block;
+  }
+  .tmedel {
+    margin-bottom: 20px;
+  }
+  .contact-form textarea {
+    width: 100%;
+  }
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+} /*# sourceMappingURL=contact.css.map */
