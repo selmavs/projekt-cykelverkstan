@@ -1,0 +1,21 @@
+@use "variables.scss" as *;
+
+footer {
+    font-size: 1rem;
+    color: $text-color;
+    border-top: 2px solid $border-bg-color;
+    background-color: $bg-color;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 1.25rem;
+
+    @media (max-width: $mobil) {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        gap: 0.6rem;
+        margin-top: 2.18rem;
+        font-size: 1.3rem;
+    }
+}

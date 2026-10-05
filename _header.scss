@@ -1,0 +1,74 @@
+@use "variables.scss" as *;
+@use "mixins.scss" as *;
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25rem;
+    border-bottom: 1px solid $border-color;
+
+    nav {
+        a {
+            color: $text-color;
+            text-decoration: none;
+            font-family: $text-font;
+            margin: 1rem;
+            
+            &:hover {
+            background-color: $border-bg-color;
+            color: $main-color;
+            }
+
+            @media (max-width: $mobil) {
+                font-size: 1.3rem;
+                font-weight: bold;
+            }
+        }
+        ul {
+            @media (max-width: $mobil) {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1rem;
+            }
+        }    
+    }
+    
+    .logo-text {
+        display: flex;
+        gap: 0.9rem;
+    
+        svg {
+            width: 1.5rem;
+            height: auto;
+            color: $logo-color;
+
+            @media (max-width: $mobil){
+                width: 2.8rem;
+            }
+        }
+    }
+    
+    .start {
+        display: flex;
+        flex-direction: column; 
+    
+        p:first-of-type {
+            font-size: 0.95rem;
+            font-weight: bold;
+            color: $main-color;
+
+            @media (max-width: $mobil) {
+                font-size: 1.6rem;
+            }
+        }
+    
+        p:last-of-type {
+            font-size: 0.7rem;
+            color: $text-color;
+
+            @media (max-width: $mobil) {
+                font-size: 1rem;
+            }
+        }
+    }
+}

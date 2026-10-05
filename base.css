@@ -12,10 +12,10 @@ nav ul {
 
 ul li{
     list-style: none;
-}
+} 
 
-header{
-    background-color: grey;
+header {
+    
     padding: 20px;
 }
 
@@ -25,9 +25,10 @@ nav{
 }
 
 footer {
-display: flex;
-background-color: grey;
+    display: flex;
+    /* background-color: grey;  */
 }
+
 
 h1 {
     font-family: "Big Shoulders", sans-serif;
